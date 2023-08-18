@@ -1,0 +1,70 @@
+http/1.1 and http/2 are different version of the hypertext transfer
+protocol(http),which is the protocol used  for tranmitting data over
+the internet .Here are the main different between http/1.1 and http/2
+
+
+--Request and Response multiplexing--:
+                                     in http/1.1 each Request and Response
+requires  a separate connection,which can lead to inefficiencies,especially when 
+multiple requsets are made to the same server. http/2 introduce requsetand response
+multiplexing,allowing multiple requsets and response to be sent over a single connection
+this multiplexing improves of performance by reducing latency and elimation the need
+for multiple connection
+
+--binary protocol--:
+              while http/1.1 uses a plain text format,http/2 uses
+a binary protocol for data tranmission.the binary format allows for
+more efficient parsing and reduces the overhea to textual representation.this 
+helps to improves performance by reduces the size of the data being connection
+
+--Header compression--:
+                 http/2 introduce Header compression,which reduces the size
+of the header sent between the client and the server this this compression
+technique,known as Hpack ,reduces the amout of data tranmitted resulting in 
+faster performance,especially for bandwith constrained connection
+
+--server push--:
+                    http/2 includes a server push feature,which allows the
+server to proactively sent resources to the clint before they are explicitly
+requseted.this can improves performance by reducing the number of round trips 
+ requires to fetch all the necessary are resources
+
+ --Backward compatibillity--:
+                          http/2 is designed to be fully Backward compatible with
+http/1.1 .this means that server that support http/2 can still server request from
+client using http/1.1,provding a smooth transition without requiring immediate upgrades
+from all client and server
+
+--stream prioritization--:
+                   http/2 introduce the concept of stream prioritization
+allowing the client to assign priority levels to different resources.this feature
+enables more efficient resources allocation and ensure that critical resources
+are loades faster
+ 
+
+ different between http/1.1 and http/2 are
+    
+       HTTP/1.1                           |||        HTTP/2
+                                           ||
+ 1.it work on the textual format           || 1.it work on the binary protocol
+                                           ||
+2. there is head of line blocking that     || 2.it alows multiplexing so one TCP
+ block all request behind it until it      || connection is required gor multiple
+ doen't s get its all resources            || request
+                                           ||
+3. it uses request resources lilining for  ||3.it uses PUSH frame by server that
+use getting multiple pages                 || collects all multiple pages
+
+4.it compresses data by itselfS            || 4.uses HPACK for data compression
+
+
+
+
+
+
+
+
+
+
+
+
