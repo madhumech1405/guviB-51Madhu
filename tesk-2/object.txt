@@ -1,0 +1,62 @@
+           wirte blog difference between document and window object   
+
+
+
+
+in javaScript both the document and window object play essential role When
+it comes to mainpulating and interacting with web pages However they server
+distinct purpose and have unique properties let explore the key 
+difference between these two object
+ 
+
+ purpose and scope :
+   ++document++:
+                the document object represents the entire HTML
+document structure .it provide access to all  the element and content
+within the current web pages .essentially it's a way to inteact within
+content display in the browser
+  --window--:
+             the window object represents the browser window or table
+itselfs.it's the global object in browser contexes and it encompasses
+various aspects like the viewport location history and more
+ 
+ access and process:
+    ++document++:
+                 through the document object you can access and mainpulating
+the element you can access and manipulated the element and content on the 
+current webpage .it provides properties like 'getElementById','querySelector'
+innerHTML and textContent interact with  HTML element and their content
+   --window--:
+              the window object offers acces to various properties related
+to the browser window such as location (to navigate to different URL),
+history(to manage  browser navigate history) and innerwidth and inerheight
+(to get the dimension of viewport)
+
+event and method:
+++document++:
+           the document object is used to handled event related to the 
+content on the pages like'click','submit'and 'keydown'.itn also provide
+method to create new element("createElement"),modify style('style property')
+and more
+ --window--:
+           the window object is responsible for handling event that are not
+directly tied to the content such as resize,'load'and 'scroll'it also
+offer method cookies ('cookies')and interact with other browser features
+
+hierarchy:'
+     ++document++:
+             the document object is property of the window object you
+acces of the window.document or simply document
+  --window--:
+       the window object is the  top level object in th browser
+javaScript environment.it's the global scope where all other 
+browser-related object are  acessiable 
+
+
+ conculsion:
+        the document object is primarily concerned with the content
+content  structure of webpage while the window object handled browser 
+related functionality provide access to various browser properties
+and method between these two object is crucial for effective 
+web development and mainpulation of both the content and behaviorof 
+web pages 
